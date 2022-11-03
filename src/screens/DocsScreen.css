@@ -1,0 +1,11 @@
+.docs-screen-body{
+    height: 100%;
+}
+
+.doc-tiles-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding:5% 0;
+}
