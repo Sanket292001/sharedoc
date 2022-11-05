@@ -3,11 +3,11 @@
     padding: 1% 1%;
     grid-template-columns: auto;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 @media screen and (max-width: 480px) {
     .form-container{
-        margin-top: 27.5%;
+        margin-top: 17.5%;
     }
 }
