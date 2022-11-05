@@ -1,10 +1,10 @@
 import './App.css';
-import ShowQRScreen from './screens/ShowQRScreenWithoutBtn/ShowQRScreen';
+import RequiredDocsScreen from './screens/RequiredDocsScreen/RequiredDocsScreen';
 
 function App() {
   return (
     <div className="App">
-      <ShowQRScreen/>
+      <RequiredDocsScreen/>
     </div>
   );
 }

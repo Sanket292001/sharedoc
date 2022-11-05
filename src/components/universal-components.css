@@ -1,7 +1,7 @@
 .doc-tile {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0 2.5%;
   margin: 0.65% 0;
   width: 70%;
@@ -13,8 +13,28 @@
   box-shadow: 5px 5px #ccc;
 }
 
+.doc-tile > a{
+  text-decoration: none;
+  color: #333;
+}
+
 .doc-tile:hover, .doc-tile:focus, .doc-tile:active{
   box-shadow: 2.5px 2.5px #333;
+}
+
+.tile-actions-container{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actions{
+  cursor: pointer;
+}
+
+.actions:hover , .actions:active, .actions:focus{
+  transform: scale(1.1);
 }
 
 .profile-icon {
@@ -31,6 +51,15 @@
   padding: 0 5%;
 }
 
+
+.tile-container-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding:1% 0;
+}
+
 .main-btn-container{
     display: flex;
     align-items: center;
@@ -40,7 +69,7 @@
 .main-btn {
   position: fixed;
   bottom: 10vh;
-  padding: 2.5% 5%;
+  padding: 1% 5%;
   margin: 0.65% 0;
   text-decoration: none;
   background-color: black;
@@ -75,5 +104,8 @@ box-shadow: 5px 5px #ccc;
 @media screen and (min-width: 480px) {
     .main-btn .auth-btn{
       padding: 1% 5%;
+    }
+    .tile-actions-container{
+      width: 10%;
     }
 }

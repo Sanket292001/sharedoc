@@ -1,0 +1,15 @@
+.auth-btn {
+    padding: 1% 0%;
+    text-decoration: none;
+    margin: 5% 30%;
+    background-color: black;
+    color: #fff;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px #ccc;
+}
+
+.spacer{
+    height: 50px;
+}
