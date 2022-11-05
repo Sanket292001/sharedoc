@@ -1,10 +1,10 @@
 import './App.css';
-import DocsScreen from './screens/DocsScreen';
+import LoginScreen from './screens/LoginScreen/LoginScreen';
 
 function App() {
   return (
     <div className="App">
-      <DocsScreen/>
+      <LoginScreen/>
     </div>
   );
 }

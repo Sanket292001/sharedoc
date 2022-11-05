@@ -55,8 +55,25 @@
     box-shadow: 2.5px 2.5px #333;
 }
 
+.auth-btn {
+padding: 3% 0%;
+margin: 30% 5%;
+text-decoration: none;
+background-color: black;
+color: #fff;
+font-weight: 700;
+border: 2px solid black;
+border-radius: 5px;
+box-shadow: 5px 5px #ccc;
+}
+
+.auth-btn:hover, .auth-btn:focus, .auth-btn:active{
+  box-shadow: 2.5px 2.5px #333;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 480px) {
-    .main-btn {
+    .main-btn .auth-btn{
       padding: 1% 5%;
     }
 }

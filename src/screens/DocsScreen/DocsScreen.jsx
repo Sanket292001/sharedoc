@@ -1,9 +1,9 @@
 import * as React from "react";
-import AppBar from "../components/AppBar/AppBar";
-import MyDocTile from "../components/DocTile/MyDocTile";
+import AppBar from "../../components/AppBar/AppBar";
+import MyDocTile from "../../components/DocTile/MyDocTile";
 import "./DocsScreen.css";
-import MainButton from "../components/Buttons/MainButton";
-import BottomNavBar from "../components/BottomNav/BottomNavigation";
+import MainButton from "../../components/Buttons/MainButton";
+import BottomNavBar from "../../components/BottomNav/BottomNavigation";
 
 const appBarHeading = "My Documents";
 
@@ -25,7 +25,7 @@ function DocsScreen() {
         <MyDocTile docName="HackCBS Admit Card" editDocument={editDoc} />
         <MyDocTile docName="Dinner Card" editDocument={editDoc} />
       </div>
-      <MainButton title="Upload A New Doc"/>
+      <MainButton title="Upload A New Doc" onClick={editDoc}/>
       <BottomNavBar/>
     </div>
   );

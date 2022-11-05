@@ -11,7 +11,7 @@ function BottomNavBar(){
 
     return (
         <Paper
-        sx={{ position: "fixed", bottom: 0, left: 0, right: 0, backgroundColor:"#333", opacity:.9125 }}
+        sx={{ position: "fixed" ,bottom: 0, left: 0, right: 0, opacity:.9125, }}
         elevation={3}
       >
         <BottomNavigation
