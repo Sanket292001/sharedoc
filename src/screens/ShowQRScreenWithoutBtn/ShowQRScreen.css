@@ -1,0 +1,21 @@
+.show-qr-body{
+    height: 90%;
+}
+
+.qr-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-qr-btn {
+    padding: 1% 5%;
+    cursor:pointer;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px #ccc;
+}

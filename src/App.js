@@ -1,5 +1,5 @@
 import './App.css';
-import ShowQRScreen from './screens/ShowQRScreen/ShowQRScreen';
+import ShowQRScreen from './screens/ShowQRScreenWithoutBtn/ShowQRScreen';
 
 function App() {
   return (
