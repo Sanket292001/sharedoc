@@ -1,10 +1,10 @@
 import './App.css';
-import SignUpScreen from './screens/SignUpScreen/SignUpScreen';
+import ShowQRScreen from './screens/ShowQRScreen/ShowQRScreen';
 
 function App() {
   return (
     <div className="App">
-      <SignUpScreen/>
+      <ShowQRScreen/>
     </div>
   );
 }
