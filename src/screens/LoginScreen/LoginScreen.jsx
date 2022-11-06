@@ -1,7 +1,7 @@
 import * as React from "react";
+
 import "./LoginScreen.css";
 import IconButton from "@mui/material/IconButton";
-
 import InputLabel from "@mui/material/InputLabel";
 import InputAdornment from "@mui/material/InputAdornment";
 import FilledInput from "@mui/material/FilledInput";
@@ -12,6 +12,11 @@ import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import AuthButton from "../../components/Buttons/AuthButton";
 
 function LoginScreen() {
+
+  const navigateTo = () => {
+    window.location.href = "/sign-up";
+  };
+  
   const [values, setValues] = React.useState({
     email: "",
     password: "",
@@ -35,7 +40,10 @@ function LoginScreen() {
 
   const onClickLogin = () => {
     //some logic to authenticate and then show up the home page.
+    //In this case the routing will be done using the express middleware. 
     console.log("Email - " + values.email + " Password - " + values.password);
+    //but for now this is where we will want to go.
+    window.location.href = "/ind-home";
   };
 
   return (
@@ -77,20 +85,12 @@ function LoginScreen() {
 
         <p>
           Not an User?{" "}
-          <a
-            href="www.google.com"
-            style={{
-              textDecoration: "none",
-              fontWeight: "bold",
-              color: "#0983ff",
-            }}
-          >
-            SIGN UP
-          </a>{" "}
-          here
+          <span style={{textDecoration:"none", fontWeight:"bold", color:"#0983ff", cursor:'pointer'}} onClick={navigateTo}>SIGN UP</span>
         </p>
+        
         <AuthButton title="Login" onClick={onClickLogin} />
       </div>
+
     </div>
   );
 }

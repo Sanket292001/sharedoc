@@ -30,6 +30,10 @@ function AppBar({title}) {
   const navigateToHome = () => {
       //navigate to home screen.
   };
+  
+  const navigateToDocs = () => {
+    window.open("/docs");
+  }
 
   return (
     <React.Fragment>
@@ -85,7 +89,7 @@ function AppBar({title}) {
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         
-        <MenuItem>
+        <MenuItem onClick={navigateToDocs}>
           <ListItemIcon>
             <DescriptionIcon fontSize="small" />
           </ListItemIcon>

@@ -37,7 +37,7 @@ function RequiredDocsScreen() {
         </p>
       
        <div className="spacer">
-            
+                
        </div>
     </div>
   );

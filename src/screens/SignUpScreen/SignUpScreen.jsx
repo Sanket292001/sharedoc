@@ -14,6 +14,10 @@ import AuthButton from "../../components/Buttons/AuthButton";
 
 function SignUpScreen() {
 
+  const navigateTo = () => {
+    window.location.href = "/login";
+  };
+
     const [values, setValues] = React.useState({
         name: '',
         password: '',
@@ -78,7 +82,7 @@ function SignUpScreen() {
         </FormControl>
   
 
-        <p>Already an User? <a href="www.google.com" style={{textDecoration:"none", fontWeight:"bold", color:"#0983ff"}}>LOGIN</a> here</p> 
+        <p>Already an User? <span onClick={navigateTo} style={{textDecoration:"none", fontWeight:"bold", color:"#0983ff", cursor:'pointer'}}>LOGIN</span> here</p> 
         <AuthButton title="Sign Up" onClick={onClickSignUp}/>
       </div>
      
